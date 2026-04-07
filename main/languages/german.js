@@ -27,6 +27,8 @@ LANGUAGE_REGISTRY.register({
         { foreign: "Dem (d)", english: "The (dative)", category: "Basics" },
         { foreign: "Den (a-m)", english: "The (accusitive masc.)", category: "Basics" },
         { foreign: "Des (p)", english: "The (possessive)", category: "Basics" },
+        { foreign: "Ein", english: "A (masc.)", category: "Basics" },
+        { foreing: "Eine", english: "A (fem.)", category: "Basics" },
         // Pronouns & Core Verbs
         { foreign: "Ich", english: "I", category: "Pronouns" },
         { foreign: "Du", english: "You (informal)", category: "Pronouns" },
@@ -40,7 +42,7 @@ LANGUAGE_REGISTRY.register({
         { foreign: "Will", english: "Want (ich will)", category: "Pronouns" },
         { foreign: "Kann", english: "Can (ich kann)", category: "Pronouns" },
         // Numbers
-        { foreign: "Ein / Eine", english: "One", category: "Numbers" },
+        { foreign: "Eins", english: "One", category: "Numbers" },
         { foreign: "Zwei", english: "Two", category: "Numbers" },
         { foreign: "Drei", english: "Three", category: "Numbers" },
         { foreign: "Vier", english: "Four", category: "Numbers" },
@@ -141,8 +143,24 @@ LANGUAGE_REGISTRY.register({
         { foreign: "Mein (m/n)", english: "My (masc./neuter)", category: "Descriptions" },
         { foreign: "Meine (f/pl)", english: "My (fem./plural)", category: "Descriptions" },
         // Vehicles
-        { foreign: "Krankenwagon", english: "Ambulance", category: "Vehicle" },
-        { foreign: "Flugzeug", english: "Airplane", category: "Vehicle" },
+        { foreign: "Krankenwagon", english: "Ambulance (lit: sick vehicle)", category: "Vehicle" },
+        { foreign: "Flugzeug", english: "Airplane (lit: flying thing)", category: "Vehicle" },
+        { foreign: "Boot", english: "Boat", category: "Vehicle" },
+        { foreign: "Unterseeboot", english: "Submarine (lit: Undersea boat)", category: "Vehicle"},
+        { foreign: "", english: "", category: ""},
+        { foreign: "", english: "", category: ""},
+        // Oddly descriptive words
+        { foreign: "Backpfeifengesicht", english: "A face that begs to be slapped", category: "Oddly Descriptive"},
+        { foreign: "Kummerspeck", english: "Excess weight gained from emotional eating", category: "Oddly Descriptive" },
+        { foreign: "Schadenfreude", english: "The feeling of pleasure gained from seeing anothers misfortune", category: "Oddly Descriptive" },
+        { foreign: "Lebensabschnittpartner", english: "Temporary lover or partner", category: "Oddly Descriptive" },
+        { foreign: "Schnapsidee", english: "An idea you have while drunk that you will regret in the morning", category: "Oddly Descriptive" },
+        { foreign: "Verschlimmbessern", english: "to make something worse while trying to make it better", category: "Oddly Descriptive" },
+        { foreign: "Dreikäsehoch", english: "Small child (lit: three cheeses high)", category: "Oddly Descriptive" },
+        { foreign: "Unbaumtraurigkeit", english: "Sadness when taking down a christmas tree", category: "Oddly Descriptive" },
+        { foreign: "Klugscheißer", english: "A know-it-all", category: "Oddly Descriptive" },
+        { foreign: "Wunschkleidungsbehalten", english: "", category: "Oddly Descriptive" },
+        { foreign: "", english: "", category: "Oddly Descriptive" },
     ],
 
     phrases: [
@@ -166,6 +184,7 @@ LANGUAGE_REGISTRY.register({
         { foreign: "Ich habe Hunger.", english: "I am hungry.", context: "Daily Life" },
         { foreign: "Ich bin müde.", english: "I am tired.", context: "Daily Life" },
         { foreign: "Guten Appetit!", english: "Enjoy your meal!", context: "Daily Life" },
+        { foreign: "Du bist ein Idiot.", english: "You are an idiot.", context: "Being Mean" },
     ],
 
     grammar: [
