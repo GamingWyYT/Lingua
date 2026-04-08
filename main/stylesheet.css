@@ -31,7 +31,10 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
-
+.foot{
+    text-align:center;
+    color: var(--text);
+}
 /* ═══════════════════════════════════════════
        SETTINGS PANEL
     ═══════════════════════════════════════════ */
