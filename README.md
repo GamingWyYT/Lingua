@@ -1,7 +1,7 @@
 # WordWiz
 *A stupid language learning website*
 
-https://gamingwyyt.github.io/Lingua/
+https://gamingwyyt.github.io/WordWiz/
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/GamingWyYT/Lingua?logo=Github&label=Commits&style=plastic)<br>
 ![GitHub contributors](https://img.shields.io/github/contributors/GamingWyYT/Lingua?logo=github&label=Contributors&style=plastic)<br>
