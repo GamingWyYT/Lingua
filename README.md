@@ -1,4 +1,4 @@
-# Lingua
+# WordWiz
 *A stupid language learning website*
 
 https://gamingwyyt.github.io/Lingua/
