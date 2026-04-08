@@ -265,15 +265,107 @@ LANGUAGE_REGISTRY.register({
                     status: "active"
                 },
                 {
-                    id: "de-family",
-                    name: "Family :)",
-                    icon: "👨‍👩‍👧",
-                    description: "Das Mutter ist sehr klüg",
-                    skills: ["Mutter", "Vater", "Bruder", "Schwester", "Sohn", "Tochter"],
+                    id: "de-the",
+                    name: "Das, Die, Der, Dem, Den, Des",
+                    icon: "🗃️",
+                    description: "The, The, The, The, The, & The.",
+                    skills: ["Das (n)", "Die (f)", "Der (m)", "Dem (d)", "Den (a-m)", "Des (p)"],
                     xp: 20,
                     status: "locked"
                 },
+                {
+                    id: "de-responding",
+                    name: "Responding",
+                    icon: "🙂‍↔️",
+                    description: "Responding To People",
+                    skills: ["Bis bald", "Bitte", "Bitte schön", "Danke", "Danke schön", "Entschuldigung", "Es tut mir leid"],
+                    xp: 20,
+                    status: "locked"
+                },
+                {
+                    id: "de-basicsQuiz",
+                    name: "Responding To People",
+                    icon: "📄",
+                    description: "Responding To People",
+                    skills: [
+                        "Hallo", "Tschüss", "Auf Wiedersehen", "Und", "Mit",                                            // de-greetings
+                        "Das (n)", "Die (f)", "Der (f)", "Dem (d)", "Den (a-m)", "Des (p)",                             // de-the
+                        "Bis bald", "Bitte", "Bitte schön", "Danke", "Danke schön", "Entschuldigung", "Es tut mir leid" // de-responding
+                    ],
+                    xp: 40,
+                    status: "locked"
+                },
             ],
+        },
+        {
+            section: "Die Family Or Smth",
+            icon: "👨‍👩‍👧‍👦",
+            description: "Learn how to talk about people",
+            nodes: [
+                {
+                    id: "de-siblings",
+                    name: "Mein bruder ist nicht nett",
+                    icon: "🧒",
+                    description: "Mein Bruder ist sehr klüg",
+                    skills: ["Familie", "Bruder", "Schwester"],
+                    xp: 20,
+                    status: "locked"
+                },
+                {
+                    id: "de-parents",
+                    name: "Meine mutter ist sehr nett",
+                    icon: "👨‍👩",
+                    description: "Mein Familie ist sehr klüg",
+                    skills: ["Familie", "Mutter", "Vater"],
+                    xp: 20,
+                    status: "locked"
+                },
+                {
+                    id: "de-familyQuiz1",
+                    name: "Famil Quiz #1",
+                    icon: "📄",
+                    description: "Das Bruder ist sehr klüg und die Schwester is sehr nett",
+                    skills: [
+                        "Familie",               // de-everyFamily
+                        "Bruder", "Schwester",  // de-siblings
+                        "Mutter", "Vater"       // de-parents
+                    ],
+                    xp: 40,
+                    status: "locked"
+                },
+                {
+                    id: "de-kids",
+                    name: "Die Kider",
+                    icon: "👶",
+                    description: "Learn about kids",
+                    skills: ["Familie", "Tochter", "Sohn" ],
+                    xp: 20,
+                    status: "locked"
+                },
+                {
+                    id: "de-grandParents",
+                    name: "Großvater und Großmutter",
+                    icon: "👨‍👩",
+                    description: "Parents, but more",
+                    skills: ["Familie", "Vater", "Großvater", "Mutter", "Großmutter" ],
+                    xp: 20,
+                    status: "locked"
+                },
+                {
+                    id: "de-familyQuiz2",
+                    name: "Full Family Quiz",
+                    icon: "📄",
+                    description: "Das Bruder ist sehr klüg und die Schwester is sehr nett",
+                    skills: [
+                        "Familie",                                       // de-everyFamily
+                        "Bruder", "Schwester",                          // de-siblings
+                        "Tochter", "Sohn",                              // de-kids
+                        "Vater", "Großvater", "Mutter", "Großmutter"    // de-grandParents
+                    ],
+                    xp: 40,
+                    status: "locked"
+                },
+            ]
         },
         {
             section: "Das Essen",
@@ -295,7 +387,7 @@ LANGUAGE_REGISTRY.register({
                     icon: "🥪",
                     description: "Brot und Fisch, bitte",
                     skills: ["Sandwich", "Brot", "Hähnchen", "Fisch", "Reis", "Gemüse", "Obst", "Käse", "Ei", "Mit", "Und"],
-                    xp: 30,
+                    xp: 20,
                     status: "locked"
                 },
                 {
@@ -304,10 +396,10 @@ LANGUAGE_REGISTRY.register({
                     icon: "📄",
                     description: "Brot und Kaffee mit Milch, bitte",
                     skills: [
-                        "Tee", "Milch", "Kaffee", "Wein", "Bier", "Mit", "Und",
-                        "Sandwich", "Brot", "Hähnchen", "Fisch", "Reis", "Gemüse", "Obst", "Käse", "Ei",
+                        "Tee", "Milch", "Kaffee", "Wein", "Bier", "Mit", "Und",                             // de-drinks
+                        "Sandwich", "Brot", "Hähnchen", "Fisch", "Reis", "Gemüse", "Obst", "Käse", "Ei",    // de-food
                     ],
-                    xp: 30,
+                    xp: 40,
                     status: "locked"
                 },
             ],
@@ -323,7 +415,7 @@ LANGUAGE_REGISTRY.register({
                     icon: "🔢",
                     description: "Learn to count to 10",
                     skills: ["Eins", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn"],
-                    xp: 30,
+                    xp: 20,
                     status: "locked"
                 },
                 {
@@ -332,17 +424,17 @@ LANGUAGE_REGISTRY.register({
                     icon: "🔢",
                     description: "Learn to count from 11 to 20",
                     skills: ["Elf", "Zwölf", "Dreizehn", "Vierzehn", "Fünfzehn", "Sechszehn", "Siebenzehn", "Achtzehn", "Neunzehn", "Zwanzig"],
-                    xp: 30,
+                    xp: 20,
                     status: "locked"
                 },
                 {
-                    id: "de-numbers3",
+                    id: "de-numbersQuiz",
                     name: "Counting Up To 20",
                     icon: "🔢",
                     description: "Learn to count from 1 to 20",
                     skills: [
-                        "Eins", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn", // 1 - 10
-                        "Elf", "Zwölf", "Dreizehn", "Vierzehn", "Fünfzehn", "Sechszehn", "Siebenzehn", "Achtzehn", "Neunzehn", "Zwanzig" // 11 - 20
+                        "Eins", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn",                                  // de-numbers
+                        "Elf", "Zwölf", "Dreizehn", "Vierzehn", "Fünfzehn", "Sechszehn", "Siebenzehn", "Achtzehn", "Neunzehn", "Zwanzig"    // de-numbers2
                     ],
                     xp: 40,
                     status: "locked"
