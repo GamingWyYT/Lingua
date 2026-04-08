@@ -198,7 +198,7 @@ LANGUAGE_REGISTRY.register({
                     description: "Bonjour, bonsoir, au revoir — nail the French hello and goodbye.",
                     skills: ["Bonjour", "Au revoir", "Merci", "S'il vous plaît"],
                     xp: 20,
-                    status: "done"
+                    status: "active"
                 },
                 {
                     id: "fr-articles",
@@ -207,7 +207,7 @@ LANGUAGE_REGISTRY.register({
                     description: "French nouns have gender. Learn which article goes with which noun.",
                     skills: ["Le (masc)", "La (fem)", "Les (pl)", "L' (vowel)"],
                     xp: 30,
-                    status: "done"
+                    status: "locked"
                 },
                 {
                     id: "fr-numbers",
@@ -216,7 +216,7 @@ LANGUAGE_REGISTRY.register({
                     description: "Un, deux, trois… count your way into French.",
                     skills: ["Un", "Deux", "Trois", "Dix", "Vingt"],
                     xp: 20,
-                    status: "active"
+                    status: "locked"
                 },
             ]
         },

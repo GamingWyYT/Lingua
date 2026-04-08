@@ -57,7 +57,7 @@ LANGUAGE_REGISTRY.register({
         { foreign: "El agua", english: "Water", category: "Food & Drink" },
         { foreign: "El café", english: "Coffee", category: "Food & Drink" },
         { foreign: "El café solo", english: "Black Coffee", category: "Food & Drink" },
-        { foreign: "El café Lehce", english: "Coffee With Creamer", category: "Food & Drink" },
+        { foreign: "El café Leche", english: "Coffee With Creamer", category: "Food & Drink" },
         { foreign: "El vino", english: "Wine", category: "Food & Drink" },
         { foreign: "La cerveza", english: "Beer", category: "Food & Drink" },
         { foreign: "El pan", english: "Bread", category: "Food & Drink" },
@@ -111,6 +111,7 @@ LANGUAGE_REGISTRY.register({
         { foreign: "Cansado", english: "Tired", category: "Descriptions" },
         { foreign: "Caliente", english: "Hot", category: "Descriptions" },
         { foreign: "Frío", english: "Cold", category: "Descriptions" },
+        { foreign: "Pinche", english: "No no, not nice", category: "Descriptions"}
     ],
 
     phrases: [
@@ -200,7 +201,7 @@ LANGUAGE_REGISTRY.register({
                     description: "Say hello, goodbye, and introduce yourself with confidence.",
                     skills: ["Hola", "Adiós", "Por favor", "Gracias"],
                     xp: 20,
-                    status: "done"
+                    status: "active"
                 },
                 {
                     id: "sp-numbers",
@@ -209,7 +210,7 @@ LANGUAGE_REGISTRY.register({
                     description: "Count from one to ten — the backbone of every conversation.",
                     skills: ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis", "Siete", "Ocho", "Nueve", "Diez"],
                     xp: 20,
-                    status: "done"
+                    status: "locked"
                 },
                 {
                     id: "sp-pronouns",
@@ -218,7 +219,7 @@ LANGUAGE_REGISTRY.register({
                     description: "Learn who's who: yo, tú, él, ella, nosotros, ellos.",
                     skills: ["Yo", "Tú", "Él / Ella", "Nosotros"],
                     xp: 30,
-                    status: "active"
+                    status: "locked"
                 },
             ]
         },
@@ -311,15 +312,6 @@ LANGUAGE_REGISTRY.register({
                     description: "Survive airports, trains, and hotels with these key phrases.",
                     skills: ["¿Dónde está…?", "Un billete a…", "La cuenta"],
                     xp: 50,
-                    status: "locked"
-                },
-                {
-                    id: "sp-fluency",
-                    name: "Fluency Check",
-                    icon: "🏆",
-                    description: "Prove you've mastered everything — the ultimate challenge.",
-                    skills: ["Full vocab", "All phrases", "Grammar"],
-                    xp: 100,
                     status: "locked"
                 },
             ]

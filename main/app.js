@@ -43,7 +43,7 @@ const LANGUAGE_REGISTRY = {
 
 let pathProgress = {};
 try {
-    const saved = localStorage.getItem('lingua_path_progress');
+    const saved = localStorage.getItem('wordwiz_path_progress');
     if (saved) {
         const raw = JSON.parse(saved);
         for (const [k, v] of Object.entries(raw)) pathProgress[k] = new Set(v);
@@ -54,7 +54,7 @@ function savePathProgress() {
     try {
         const plain = {};
         for (const [k, v] of Object.entries(pathProgress)) plain[k] = [...v];
-        localStorage.setItem('lingua_path_progress', JSON.stringify(plain));
+        localStorage.setItem('wordwiz_path_progress', JSON.stringify(plain));
     } catch (e) { }
 }
 
@@ -395,7 +395,7 @@ function renderPath() {
           <div class="path-empty">
             <div class="path-empty-icon">🗺️</div>
             <h3>No Learning Path Yet</h3>
-            <p>Concact a devolper of <code>Lingua</code> to get a learning path for this language.</p>
+            <p>Concact a devolper of <code>WordWiz</code> to get a learning path for this language.</p>
           </div>`;
         return;
     }
@@ -563,8 +563,8 @@ function buildUnitQuizPool(node) {
         normalize(s)
     );
 
-    const pool = lang.vocab.filter(w =>
-        skillKeywords.includes(normalize(w.foreign))
+    const pool = lang.vocab.filter(word =>
+        skillKeywords.includes(normalize(word.foreign))
     );
 
     console.log("keywords:", skillKeywords);
@@ -574,11 +574,10 @@ function buildUnitQuizPool(node) {
 }
 
 function normalize(str) {
-    return str
-        .toLowerCase()
-        .trim()
-        .normalize("NFD") // remove accents (ü → u)
-        .replace(/[\u0300-\u036f]/g, "");
+    if (str !== "") {
+        console.log(str)
+        return str.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
 }
 
 function shuffleAndLimit(arr) {
@@ -620,8 +619,7 @@ function showUQQuestion() {
     const allVocab = currentLang.vocab;
     const others = allVocab.filter((_, i) => allVocab[i].foreign !== current.foreign);
     const sameCat = others.filter(w => w.category === current.category).sort(() => Math.random() - 0.5);
-    const diffCat = others.filter(w => w.category !== current.category).sort(() => Math.random() - 0.5);
-    const distractors = [...sameCat, ...diffCat].slice(0, 3);
+    const distractors = [...sameCat].slice(0, 3);
     const answers = [...distractors, current].sort(() => Math.random() - 0.5);
 
     const opts = document.getElementById('uqOptions');
@@ -729,7 +727,7 @@ const DEFAULTS = {
 let appSettings = { ...DEFAULTS };
 
 try {
-    const saved = localStorage.getItem('lingua_settings');
+    const saved = localStorage.getItem('wordwiz_settings');
     if (saved) {
         const raw = JSON.parse(saved);
         if (raw.logoColor && !raw.highlightColor) raw.highlightColor = raw.logoColor;
@@ -773,7 +771,7 @@ function syncSwatchActive(containerId, color) {
 }
 
 function saveSettings() {
-    try { localStorage.setItem('lingua_settings', JSON.stringify(appSettings)); } catch (e) { }
+    try { localStorage.setItem('wordwiz_settings', JSON.stringify(appSettings)); } catch (e) { }
 }
 
 function resetSettings() {

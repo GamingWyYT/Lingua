@@ -12,6 +12,7 @@ LANGUAGE_REGISTRY.register({
         { foreign: "Bis bald", english: "See you soon", category: "Basics" },
         { foreign: "Ja", english: "Yes", category: "Basics" },
         { foreign: "Nein", english: "No", category: "Basics" },
+        { foreign: "Nicht", english: "Not", category: "Basics"},
         { foreign: "Bitte", english: "Please", category: "Basics" },
         { foreign: "Danke", english: "Thank you", category: "Basics" },
         { foreign: "Danke schön", english: "Thank you very much", category: "Basics" },
@@ -28,7 +29,7 @@ LANGUAGE_REGISTRY.register({
         { foreign: "Den (a-m)", english: "The (accusitive masc.)", category: "Basics" },
         { foreign: "Des (p)", english: "The (possessive)", category: "Basics" },
         { foreign: "Ein", english: "A (masc.)", category: "Basics" },
-        { foreing: "Eine", english: "A (fem.)", category: "Basics" },
+        { foreign: "Eine", english: "A (fem.)", category: "Basics" },
         // Pronouns & Core Verbs
         { foreign: "Ich", english: "I", category: "Pronouns" },
         { foreign: "Du", english: "You (informal)", category: "Pronouns" },
@@ -138,7 +139,7 @@ LANGUAGE_REGISTRY.register({
         { foreign: "Müde", english: "Tired", category: "Descriptions" },
         { foreign: "Heiß", english: "Hot", category: "Descriptions" },
         { foreign: "Kalt", english: "Cold", category: "Descriptions" },
-        { foreign: "Klug", english: "Smart", category: "Descriptions" },
+        { foreign: "Klüg", english: "Smart", category: "Descriptions" },
         { foreign: "Nett", english: "Nice / Kind", category: "Descriptions" },
         { foreign: "Mein (m/n)", english: "My (masc./neuter)", category: "Descriptions" },
         { foreign: "Meine (f/pl)", english: "My (fem./plural)", category: "Descriptions" },
@@ -146,46 +147,55 @@ LANGUAGE_REGISTRY.register({
         { foreign: "Krankenwagon", english: "Ambulance (lit: sick vehicle)", category: "Vehicle" },
         { foreign: "Flugzeug", english: "Airplane (lit: flying thing)", category: "Vehicle" },
         { foreign: "Boot", english: "Boat", category: "Vehicle" },
-        { foreign: "Unterseeboot", english: "Submarine (lit: Undersea boat)", category: "Vehicle"},
-        { foreign: "Auto", english: "car", category: "Vehicle"},
-        { foreign: "Last-kraft-wagon/LKW", english: "Truck (lit: load-power-vehicle)", category: "Vehicle"},
-        { foreign: "Hubschrauber", english: "helicopter", category: "Vehicle"},
+        { foreign: "Unterseeboot", english: "Submarine (lit: Undersea boat)", category: "Vehicle" },
+        { foreign: "Auto", english: "car", category: "Vehicle" },
+        { foreign: "Last-kraft-wagon/LKW", english: "Truck (lit: load-power-vehicle)", category: "Vehicle" },
+        { foreign: "Hubschrauber", english: "helicopter", category: "Vehicle" },
     ],
 
     phrases: [
+        // Introductions
         { foreign: "Wie heißen Sie?", english: "What is your name? (formal)", context: "Introductions" },
         { foreign: "Ich heiße…", english: "My name is…", context: "Introductions" },
         { foreign: "Woher kommen Sie?", english: "Where are you from? (formal)", context: "Introductions" },
         { foreign: "Ich komme aus…", english: "I come from…", context: "Introductions" },
         { foreign: "Freut mich.", english: "Nice to meet you.", context: "Introductions" },
+        // Shopping
         { foreign: "Was kostet das?", english: "How much does it cost?", context: "Shopping" },
         { foreign: "Haben Sie das in einer anderen Größe?", english: "Do you have this in another size?", context: "Shopping" },
         { foreign: "Ich möchte das kaufen.", english: "I would like to buy this.", context: "Shopping" },
+        // Travel
         { foreign: "Wo ist die Toilette?", english: "Where is the bathroom?", context: "Travel" },
         { foreign: "Wie komme ich nach…?", english: "How do I get to…?", context: "Travel" },
         { foreign: "Eine Fahrkarte nach…, bitte.", english: "A ticket to…, please.", context: "Travel" },
+        // Restaurant
         { foreign: "Einen Tisch für zwei, bitte.", english: "A table for two, please.", context: "Restaurant" },
         { foreign: "Die Rechnung, bitte.", english: "The bill, please.", context: "Restaurant" },
         { foreign: "Was empfehlen Sie?", english: "What do you recommend?", context: "Restaurant" },
+        // Communication
         { foreign: "Ich verstehe nicht.", english: "I don't understand.", context: "Communication" },
         { foreign: "Können Sie langsamer sprechen?", english: "Can you speak more slowly?", context: "Communication" },
         { foreign: "Sprechen Sie Englisch?", english: "Do you speak English?", context: "Communication" },
+        // Daily Life
         { foreign: "Ich habe Hunger.", english: "I am hungry.", context: "Daily Life" },
         { foreign: "Ich bin müde.", english: "I am tired.", context: "Daily Life" },
         { foreign: "Guten Appetit!", english: "Enjoy your meal!", context: "Daily Life" },
+        // Being Mean
         { foreign: "Du bist ein Idiot.", english: "You are an idiot.", context: "Being Mean" },
-        { foreign: "Backpfeifengesicht", english: "A face that begs to be slapped", context: "Oddly Descriptive"},
+        { foreign: "Du bist nicht sehr klüg.", english: "You are an idiot.", context: "Being Mean" },
+        // Oddly Descriptive
+        { foreign: "Backpfeifengesicht", english: "A face that begs to be slapped", context: "Oddly Descriptive" },
         { foreign: "Kummerspeck", english: "Excess weight gained from emotional eating", context: "Oddly Descriptive" },
         { foreign: "Schadenfreude", english: "The feeling of pleasure gained from seeing anothers misfortune", context: "Oddly Descriptive" },
         { foreign: "Lebensabschnittpartner", english: "Temporary lover or partner", context: "Oddly Descriptive" },
         { foreign: "Schnapsidee", english: "An idea you have while drunk that you will regret in the morning", context: "Oddly Descriptive" },
         { foreign: "Verschlimmbessern", english: "To make something worse while trying to make it better", context: "Oddly Descriptive" },
-        { foreign: "Dreikäsehoch", english: "Small child (lit: three cheeses high)", context: "Oddly Descriptive" },
+        { foreign: "Dreikäsehoch", english: "Small child (literaly: three cheeses high)", context: "Oddly Descriptive" },
         { foreign: "Unbaumtraurigkeit", english: "Sadness when taking down a christmas tree", context: "Oddly Descriptive" },
         { foreign: "Klugscheißer", english: "A know-it-all", context: "Oddly Descriptive" },
         { foreign: "Wunschkleidungsbehalten", english: "The act of keeping old clothes in hope one day they will fit again", context: "Oddly Descriptive" },
         { foreign: "Luxusproblem", english: "A problem that arises in a priviliged situation and is therefore not really serious", context: "Oddly Descriptive" },
-        { foreign: "Hexenschuss", english: "A sudden and severe back pain", context: "Oddly Descriptive"}
+        { foreign: "Hexenschuss", english: "A sudden and severe back pain", context: "Oddly Descriptive" }
     ],
 
     grammar: [
@@ -249,7 +259,7 @@ LANGUAGE_REGISTRY.register({
                     id: "de-greetings",
                     name: "Greetings",
                     icon: "👋",
-                    description: "Hallo und Tschüss. Hello and goodbye",
+                    description: "Hallo und Tschüss.",
                     skills: ["Hallo", "Tschüss", "Auf Wiedersehen", "Und", "Mit"],
                     xp: 20,
                     status: "active"
@@ -261,7 +271,7 @@ LANGUAGE_REGISTRY.register({
                     description: "Das Mutter ist sehr klüg",
                     skills: ["Mutter", "Vater", "Bruder", "Schwester", "Sohn", "Tochter"],
                     xp: 20,
-                    status: "active"
+                    status: "locked"
                 },
             ],
         },
@@ -277,16 +287,28 @@ LANGUAGE_REGISTRY.register({
                     description: "Tee mit Milch, bitte",
                     skills: ["Tee", "Milch", "Kaffee", "Wein", "Bier", "Mit", "Und"],
                     xp: 20,
-                    status: "active"
+                    status: "locked"
                 },
                 {
                     id: "de-food",
                     name: "Food",
                     icon: "🥪",
-                    description: "Brot und Milich, bitte",
-                    skills: ["Sandwich", "Brot", "Hähnchen", "Fisch", "Reis", "Gemüse", "Obst", "Käse", "Ei"],
-                    xp: 20,
-                    status: "active"
+                    description: "Brot und Fisch, bitte",
+                    skills: ["Sandwich", "Brot", "Hähnchen", "Fisch", "Reis", "Gemüse", "Obst", "Käse", "Ei", "Mit", "Und"],
+                    xp: 30,
+                    status: "locked"
+                },
+                {
+                    id: "de-foodquiz",
+                    name: "Food & Drinks",
+                    icon: "📄",
+                    description: "Brot und Kaffee mit Milch, bitte",
+                    skills: [
+                        "Tee", "Milch", "Kaffee", "Wein", "Bier", "Mit", "Und",
+                        "Sandwich", "Brot", "Hähnchen", "Fisch", "Reis", "Gemüse", "Obst", "Käse", "Ei",
+                    ],
+                    xp: 30,
+                    status: "locked"
                 },
             ],
         },
@@ -300,9 +322,9 @@ LANGUAGE_REGISTRY.register({
                     name: "Counting",
                     icon: "🔢",
                     description: "Learn to count to 10",
-                    skills: ["Ein", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn"],
-                    xp: 20,
-                    status: "active"
+                    skills: ["Eins", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn"],
+                    xp: 30,
+                    status: "locked"
                 },
                 {
                     id: "de-numbers2",
@@ -310,20 +332,20 @@ LANGUAGE_REGISTRY.register({
                     icon: "🔢",
                     description: "Learn to count from 11 to 20",
                     skills: ["Elf", "Zwölf", "Dreizehn", "Vierzehn", "Fünfzehn", "Sechszehn", "Siebenzehn", "Achtzehn", "Neunzehn", "Zwanzig"],
-                    xp: 20,
-                    status: "active"
+                    xp: 30,
+                    status: "locked"
                 },
                 {
                     id: "de-numbers3",
                     name: "Counting Up To 20",
                     icon: "🔢",
-                    description: "Learn to count from 11 to 20",
+                    description: "Learn to count from 1 to 20",
                     skills: [
-                        "Ein", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn",
-                        "Elf", "Zwölf", "Dreizehn", "Vierzehn", "Fünfzehn", "Sechszehn", "Siebenzehn", "Achtzehn", "Neunzehn", "Zwanzig"
+                        "Eins", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn", // 1 - 10
+                        "Elf", "Zwölf", "Dreizehn", "Vierzehn", "Fünfzehn", "Sechszehn", "Siebenzehn", "Achtzehn", "Neunzehn", "Zwanzig" // 11 - 20
                     ],
-                    xp: 20,
-                    status: "active"
+                    xp: 40,
+                    status: "locked"
                 },
             ],
         },
