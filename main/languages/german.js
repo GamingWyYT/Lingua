@@ -260,7 +260,7 @@ LANGUAGE_REGISTRY.register({
         {
             section: "Die Basen",
             icon: "🌱",
-            description: "Start with the essentials — greet people and count to ten.",
+            description: "Start with the essentials",
             nodes: [
                 {
                     id: "de-greetings",
@@ -307,7 +307,7 @@ LANGUAGE_REGISTRY.register({
         {
             section: "Die Familie",
             icon: "👨‍👩‍👧‍👦",
-            description: "Learn how to talk about people",
+            description: "Learn how to talk about in your family",
             nodes: [
                 {
                     id: "de-siblings",
@@ -437,7 +437,7 @@ LANGUAGE_REGISTRY.register({
                 {
                     id: "de-numbersQuiz",
                     name: "Unit Quiz",
-                    icon: "🔢",
+                    icon: "📄",
                     description: "Unit Quiz For Numbers",
                     skills: [
                         "Eins", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn",                                  // de-numbers
